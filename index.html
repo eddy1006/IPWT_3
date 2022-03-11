@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Imdb lite</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>My Favorite Movies</h1>
+    <form class="" action="index.html" method="post">
+      <label for=""><strong>Title</strong></label>
+      <input type="text" placeholder="Movie Title"name="title" value="" id="title" class="text">
+      <label for=""><strong>Rating</strong></label>
+      <input type="number" placeholder="Rate the movie from 0 to 10" name="rating" value="" id="rating" class="text">
+      <input type="button" class="button" name="" value="Add movie" onclick="myCreateFunction()">
+    </form>
+    <br>
+    <table id="myTable">
+        <tr>
+            <th onclick="sortTable(0)">Title</th>
+            <th onclick="sortTable(1)">Rating</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

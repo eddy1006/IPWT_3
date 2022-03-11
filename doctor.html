@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Doctor Appointment</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Book your appointment</h1><br>
+  <form action="index.html" method="post">
+    <label for="patient_name"> Please Enter your name :</label>
+    <input type="text" name="patient_name" id="name" value="" placeholder="Your name" required /><br><br>
+    <label for="patient_age">Please Enter your age :</label>
+    <input type="text" name="patient_age" id="age" value="" placeholder="Your age" required /><br><br>
+    <label for="gender"> Choose your gender :</label>
+    <select>
+      <option value="Male"> Male
+      </option>
+      <option value="Female"> Female
+      </option>
+      <option value="Trans"> Trans
+      </option>
+      <option value="Other"> Other
+      </option>
+    </select>
+    <br><br>
+    <label for="visits">Number of visits :</label>
+    <input type="text" name="visits" id="visits" value="" required /><br><br>
+    <label for="date">Pick a date :</label>
+    <input type="date" name="date" id="date" value="" required /><br><br>
+    <label for="department">Please Enter a department:</label>
+    <input type="text" name="department" id="department" value="" placeholder="Department" required /><br><br>
+    <input type="button" class="button" name="" value="Submit" onclick="checkDetails()"><br><br>
+  </form>
+  <p id="message"></p>
+  <script src="exceptions.js" charset="utf-8"></script>
+</body>
+
+</html>
